@@ -1,10 +1,12 @@
 # vue3-beautifull-app
 
 Simple //todo app built with vue3 and tailwind 🧨
-Deployed with Vercel (in progress ...)
+### [Demo](https://georgebrata.ro/todo/)
 
+# Prerequisites
+- node v14
 
-## Project setup
+# Project setup
 ```
 npm install
 ```

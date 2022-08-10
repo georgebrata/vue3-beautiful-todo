@@ -2,6 +2,7 @@
   "name": "vue3-beautiful-todo",
   "version": "0.1.0",
   "private": true,
+  "publicPath": "/todo",
   "scripts": {
     "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
