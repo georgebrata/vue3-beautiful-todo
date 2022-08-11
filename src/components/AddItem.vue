@@ -16,7 +16,7 @@
         />
       </div>
       <div class="w-full md:w-full flex items-start md:w-full px-3">
-        <div class="flex items-start w-1/2 text-gray-700 px-2 mr-auto">
+        <div class="flex items-start text-gray-700 py-2 mr-auto">
           <svg
             fill="none"
             class="w-5 h-5 text-gray-600 mr-1"
@@ -30,14 +30,15 @@
               d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <p class="text-xs md:text-sm pt-px">Be concise.</p>
+          <p class="text-xs md:text-sm pt-px">
+            Press ENTER to quickly add item
+          </p>
         </div>
         <div class="-mr-1">
           <button
             class="bg-white text-gray-700 font-medium py-1 px-4 border border-gray rounded-lg tracking-wide mr-1 hover:bg-gray cursor-pointer hover:font-bold"
-            value="Add item"
           >
-            Add item
+            Add
           </button>
         </div>
       </div>

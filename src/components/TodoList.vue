@@ -8,7 +8,7 @@
     </div>
     <div
       v-else
-      class="todo-list flex flex-col items-center justify-center overflow-auto pt-8 mx-8"
+      class="todo-list flex flex-col items-center justify-center overflow-auto mx-8"
     >
       <TodoItem
         v-for="(item, index) in items"
@@ -33,9 +33,3 @@ defineProps({
   },
 });
 </script>
-
-<style scoped>
-.todo-list {
-  /* max-height: calc(100vh - 500px); */
-}
-</style>
