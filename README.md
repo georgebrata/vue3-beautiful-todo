@@ -1,6 +1,6 @@
 # vue3-beautifull-app
 
-Simple //todo app built with vue3 and tailwind 🧨
+Minimalist //todo app built with **vue3** and **tailwind** 🧨
 ### [Demo](https://georgebrata.ro/todo/)
 
 # Prerequisites
