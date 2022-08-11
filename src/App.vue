@@ -10,38 +10,28 @@
 </template>
 
 <script setup>
-import { reactive, ref } from "vue";
+import { computed } from "vue";
+import { useStore } from "vuex";
+import { onMounted } from "vue";
 import TodoList from "./components/TodoList.vue";
 import AddItem from "./components/AddItem.vue";
-
-const doneCount = ref(0);
-
-const list = reactive([
-  {
-    title: "Initial item",
-  },
-]);
-
+const store = useStore();
+const list = computed(() => store.state.items);
+const doneCount = computed(() => store.state.doneCount);
 const addItem = (item) => {
-  list.unshift(item);
+  store.dispatch("add", {
+    title: item,
+    date: new Date(),
+  });
 };
-
 const deleteItem = (index) => {
-  list.splice(index, 1);
+  store.dispatch("delete", index);
 };
-
 const doneItem = (index) => {
-  doneCount.value++;
-  list.splice(index, 1);
+  store.dispatch("done", index);
 };
-</script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>
+onMounted(() => {
+  store.commit("INIT");
+});
+</script>
