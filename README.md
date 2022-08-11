@@ -1,7 +1,8 @@
 # vue3-beautifull-app
 
-Minimalist //todo app built with **vue3** and **tailwind** 🧨
-### [Demo](https://georgebrata.ro/todo/){:target="_blank"}
+Minimalist //todo app built with **vue3**, **vuex** and **tailwind** 🧨
+
+#### <a href="https://georgebrata.ro/todo/" target="_blank">Demo</a>
 
 # Prerequisites
 - node v14
